@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 30px;
+      }
+      #ket_qua {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <script>
+    function program() {
+      let x = parseInt(document.getElementById("x").value);
+      let y = parseInt(document.getElementById("y").value);
+      document.getElementById("ket_qua").innerHTML = x + y;
+    }
+  </script>
+  <body>
+    <input id="x" value="1" />
+    +
+    <input id="y" value="2" />
+    <button onclick="program()">=</button>
+    <span
+      id="ket_qua"
+      onmouseenter="let ket_qua = document.getElementById('ket_qua')
+        ket_qua.style.backgroundColor = 'black'"
+      onmouseleave="let ket_qua = document.getElementById('ket_qua')
+        ket_qua.style.backgroundColor = 'yellow'"
+      >?</span
+    >
+  </body>
+</html>
